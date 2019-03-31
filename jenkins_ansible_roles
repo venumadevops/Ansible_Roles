@@ -12,7 +12,7 @@ node('Ansible_Server_node'){
   pwd
   #ansible-playbook /home/ansadmin/srini/Playbooks/filecreation.yml
  # ansible-playbook /home/ansadmin/workspace/Job_Ansible_Roles/playbook_main.yaml
-   ansible-playbook /home/ansadmin/${WORKSPACE}/${JOB_NAME}//playbook_main.yaml
+   ansible-playbook /${WORKSPACE}/${JOB_NAME}//playbook_main.yaml
   
    '''
    }
