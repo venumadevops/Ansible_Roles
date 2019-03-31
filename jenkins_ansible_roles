@@ -1,0 +1,18 @@
+#!/usr/bin/env groovy
+
+node('Ansible_Server_node'){
+   stage('SCM Checkout'){
+     git 'https://github.com/smuvw77/my-app'
+   }
+   stage('Ansible'){
+    
+  sh ''' 
+  
+  ansible --version
+  pwd
+  #ansible-playbook /home/ansadmin/srini/Playbooks/filecreation.yml
+  ansible-playbook /home/ansadmin/srini_roles/playbook_main.yaml   
+   '''
+   }
+  
+ }
