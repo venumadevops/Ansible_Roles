@@ -2,7 +2,7 @@
 
 node('Ansible_Server_node'){
    stage('SCM Checkout'){
-     git 'https://github.com/smuvw77/Ansible_Roles.git'
+     git 'https://github.com/venumadevops/Ansible_Roles.git'
    }
    stage('Ansible'){
     
